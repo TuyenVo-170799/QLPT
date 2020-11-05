@@ -1,0 +1,151 @@
+.info {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 1rem;
+}
+
+.post-title {
+    color: firebrick
+}
+
+.info .object-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+}
+
+.info .object-row:last-of-type {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.info .object-row .key {
+    width: 18%;
+    padding: 0.6rem;
+    background-color: #f9f9f9;
+}
+
+.info .object-row .value {
+    width: 82%;
+    padding: 0.6rem;
+}
+
+.half-row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+}
+
+.info .object-row .half-row .key {
+    width: 36%;
+}
+
+.info .object-row .half-row .value {
+    width: 64%;
+}
+
+.description-box {
+	width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #e8e8e8;
+    margin-top: 1rem;
+    font-size: 17px;
+}
+
+.image-box {
+    padding: 0.8rem;
+    border: 1px solid #e8e8e8;
+    margin-top: 1rem;
+}
+
+.image-box .image-list {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.image-box .image-list .col {
+    width: 25%;
+    height: 8rem;
+    padding: 0.2rem;
+}
+
+.image-box .image-list .col img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.image-box .image-list .col img:hover {
+    opacity: 1;
+}
+
+.image-box .expand-image-container {
+    width: 100%;
+    height: 22rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 0.4rem;
+}
+
+.image-box .expand-image-container #expand-image {
+    width: 60%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+}
+
+.feedback-box {
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border: 1px solid indianred;
+    border-radius: 4px;
+    background-color: lightcoral;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.feedback-box .button {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feedback-box a {
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .half-row {
+        width: 100%;
+    }
+
+    .info .object-row .half-row .key {
+        width: 25%;
+    }
+    
+    .info .object-row .half-row .value {
+        width: 75%;
+    }
+    
+    .info .object-row .category, .contact, .price {
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    .info .object-row .key {
+        width: 25%;
+    }
+
+    .info .object-row .value {
+        width: 75%;
+    }
+
+}

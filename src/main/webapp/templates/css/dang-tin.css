@@ -1,0 +1,289 @@
+.post-content {
+	padding: 0 2rem 2rem 2rem;
+}
+
+.post-content .body-title {
+	padding-bottom: 1rem;
+}
+
+.post-content .post-form {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.post-content .post-form .basic-info {
+	width: 60%;
+	box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, .29);
+}
+
+.box-title {
+	padding: 0.6rem 1rem;
+	background-color: #0c1f31;
+	color: white;
+}
+
+.post-content .post-form .basic-info .body {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 1rem;
+}
+
+.form-group {
+	width: 100%;
+	margin-bottom: 0.8rem;
+}
+
+.form-group label {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 0.1rem;
+}
+
+input, select, textarea {
+	display: block;
+	width: 100%;
+	padding: 8px;
+}
+
+.form-group .form-control {
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+}
+
+.post-content .post-form .basic-info .body .form-group #square {
+	display: table-cell;
+}
+
+.post-content .post-form .basic-info .body .form-group .input-group {
+	display: table;
+	width: 100%;
+}
+
+.post-content .post-form .basic-info .body .form-group .input-group .unit-square
+	{
+	display: table-cell;
+	background-color: lightgray;
+	border: 1px solid #ccc;
+	border-left: none;
+	text-align: center;
+}
+
+.post-content .post-form .basic-info .body .category-post {
+	width: 50%;
+	padding-right: 0.3rem;
+}
+
+.post-content .post-form .basic-info .body .square-post {
+	width: 50%;
+	padding-left: 0.3rem;
+}
+
+.post-content .post-form .basic-info .body .price-post {
+	width: 50%;
+	padding-right: 0.3rem;
+}
+
+.post-content .post-form .basic-info .body .street-post {
+	width: 50%;
+	padding-left: 0.3rem;
+}
+
+.post-content .post-form .guide-box {
+	width: calc(40% - 2rem);
+	margin-left: 2rem;
+}
+
+.post-content .post-form .guide-box .body {
+	width: 100%;
+	padding: 1rem 1.5rem 1rem 2rem;
+	border: 1px solid #0c1f31;
+}
+
+.post-content .post-form .guide-box .body .guide-list {
+	list-style-type: none;
+	margin: 0;
+}
+
+.post-content .post-form .guide-box .body .guide-list li {
+	list-style: square;
+	margin-bottom: 0.4rem;
+}
+
+.description-box {
+	width: 60%;
+	box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, .29);
+	margin-top: 1.5rem;
+}
+
+.description-box .body {
+	padding: 1rem;
+}
+
+.contact-box {
+	width: 60%;
+	margin-top: 1.5rem;
+	box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, .29);
+}
+
+.contact-box .body {
+	padding: 1rem;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.contact-box .body .name-contact {
+	width: 50%;
+	padding-right: 0.3rem;
+}
+
+.contact-box .body .phone-contact {
+	width: 50%;
+	padding-left: 0.3rem;
+}
+
+.image-box {
+	width: 60%;
+	margin-top: 1.5rem;
+	box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, .29);
+}
+
+.image-box .body {
+	padding: 1rem;
+}
+
+.image-box .body .image-note {
+	margin-top: 1rem;
+}
+
+.submit-box {
+	width: 60%;
+	margin-top: 1.5rem;
+	text-align: center;
+}
+
+.submit-box button {
+	padding: 0.8rem 5rem;
+	border-radius: 5px;
+	border: none;
+	background-color: #0c1f31;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.submit-box .cancle-button {
+	text-decoration: none;
+	margin-left: 0.7rem;
+	background-color: ghostwhite;
+	padding: 0.8rem 5rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	color: black;
+}
+
+.submit-box .cancle-button:hover {
+	background-color: #ddd;
+}
+
+.submit-box button:hover {
+	background-color: #ac9766;
+}
+
+@media screen and (max-width: 900px) {
+	.post-content .post-form .basic-info {
+		width: 100%;
+		order: 2;
+		margin-top: 1.5rem;
+	}
+	.post-content .post-form .guide-box {
+		width: 100%;
+		order: 1;
+		margin: 0;
+	}
+	.description-box {
+		width: 100%;
+		order: 3;
+	}
+	.contact-box {
+		width: 100%;
+		order: 4;
+	}
+	.image-box {
+		width: 100%;
+		order: 5;
+	}
+	.submit-box {
+		width: 100%;
+		order: 6;
+	}
+	.post-content .post-form .basic-info .body .category-post {
+		width: 100%;
+		padding-right: 0;
+	}
+	.post-content .post-form .basic-info .body .square-post {
+		width: 100%;
+		padding-left: 0;
+	}
+	.post-content .post-form .basic-info .body .price-post {
+		width: 100%;
+		padding-right: 0;
+	}
+	.post-content .post-form .basic-info .body .street-post {
+		width: 100%;
+		padding-left: 0;
+	}
+	.contact-box .body .name-contact {
+		width: 100%;
+		padding-right: 0;
+	}
+	.contact-box .body .phone-contact {
+		width: 100%;
+		padding-left: 0;
+	}
+}
+
+input[type="file"] {
+	display: block;
+}
+
+.imageThumb {
+	max-height: 75px;
+	border: 2px solid;
+	padding: 1px;
+	cursor: pointer;
+}
+
+.pip {
+	display: inline-block;
+	margin: 10px 10px 0 0;
+}
+
+.remove {
+	display: block;
+	background: #444;
+	border: 1px solid black;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+}
+
+.remove:hover {
+	background: white;
+	color: black;
+}
+
+.image-item {
+	float: left;
+	width: 20%;
+	height: 110px;
+	padding: 5px 5px 5px 0;
+}
+
+.image-item img {
+	width: 100%;
+	height: 100%;
+}
+
+.image-item img:last-child {
+	padding: 5px 0;
+}

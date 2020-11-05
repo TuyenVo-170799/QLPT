@@ -1,0 +1,53 @@
+.content {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 2rem 0 4rem 0;
+}
+
+.content .register-box {
+    width: 30rem;
+    box-shadow: 1px 1px 20px 0 rgba(0,0,0,.29);
+}
+
+.content .register-box .register-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+    background-color: #0c1f31;
+    color: white;
+}
+
+.content .register-box .register-body {
+    padding: 1rem;
+}
+
+.content .register-box .register-body .register-button {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.content .register-box .register-body .register-button button {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0c1f31;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content .register-box .register-body .register-button button:hover {
+    background-color: #ac9766;
+}
+
+.content .register-box .register-body .sign-in-link {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        padding: 2rem 1rem;
+    }
+}
