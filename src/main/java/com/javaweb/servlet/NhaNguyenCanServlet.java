@@ -30,7 +30,7 @@ public class NhaNguyenCanServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.setAttribute("posts", postDao.getByCategoryId(2));
+		req.setAttribute("posts", postDao.getAllByCate(2));
 		req.setAttribute("streets", streetDao.getAll());
 		req.setAttribute("photos", photoDao.getthumbnails());
 		RequestDispatcher rd = req.getRequestDispatcher("/views/nha-nguyen-can.jsp");

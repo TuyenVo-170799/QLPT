@@ -29,11 +29,12 @@
 		<li><a href="/o-ghep">Ở Ghép</a></li>
 		<li><a href="/huong-dan">Hướng Dẫn</a></li>
 		<li><a href="/dang-tin">Đăng Tin</a></li>
+		<li><a href="/quan-ly-tin">Quản Lý Tin</a></li>
 	</ul>
 	<form action="/tim-kiem" method="get" class="search-form">
 		<select name="categoryId" id="category">
 			<option value="0">Loại tin</option>
-			<option value="1">Thuê phòng</option>
+			<option value="1">Phòng trọ</option>
 			<option value="2">Nhà nguyên căn</option>
 			<option value="3">Ở ghép</option>
 		</select> <select name="streetId" id="street">

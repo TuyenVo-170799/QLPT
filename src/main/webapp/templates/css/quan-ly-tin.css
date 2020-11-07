@@ -45,6 +45,13 @@ table tr td a {
     color: white;
 }
 
+.sign-out {
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: #ffccbc;
+}
+
 .edit {
     background-color: forestgreen;
 }

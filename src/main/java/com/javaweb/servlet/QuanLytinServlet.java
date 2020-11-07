@@ -18,7 +18,9 @@ import com.javaweb.dao.PostDao;
 import com.javaweb.dao.StreetDao;
 import com.javaweb.model.PhotoModel;
 import com.javaweb.model.PostModel;
+import com.javaweb.model.UserModel;
 import com.javaweb.util.FormUtil;
+import com.javaweb.util.Session;
 import com.javaweb.util.UploadFileUtil;
 
 @WebServlet(value = {"/quan-ly-tin", "/dang-tin", "/sua-tin", "/xoa-tin"})
@@ -66,7 +68,8 @@ public class QuanLytinServlet extends HttpServlet {
 	}
 	
 	private void hienThiDS(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException  {
-		List<PostModel> posts = postDao.getByUserId(2);
+		UserModel user = (UserModel) Session.getInstance().getSession(req, "USER");
+		List<PostModel> posts = postDao.getByUserId(user.getId());
 		req.setAttribute("posts", posts);
 		RequestDispatcher rd = req.getRequestDispatcher("/views/quan-ly-tin.jsp");
 		rd.forward(req, resp);

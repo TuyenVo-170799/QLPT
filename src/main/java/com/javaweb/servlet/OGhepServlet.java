@@ -30,7 +30,7 @@ public class OGhepServlet extends HttpServlet {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.setAttribute("posts", postDao.getByCategoryId(3));
+		req.setAttribute("posts", postDao.getAllByCate(3));
 		req.setAttribute("streets", streetDao.getAll());
 		req.setAttribute("photos", photoDao.getthumbnails());
 		RequestDispatcher rd = req.getRequestDispatcher("/views/o-ghep.jsp");

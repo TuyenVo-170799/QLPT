@@ -30,7 +30,7 @@ public class PhongTroServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.setAttribute("posts", postDao.getByCategoryId(1));
+		req.setAttribute("posts", postDao.getAllByCate(1));
 		req.setAttribute("streets", streetDao.getAll());
 		req.setAttribute("photos", photoDao.getthumbnails());
 		RequestDispatcher rd = req.getRequestDispatcher("/views/phong-tro.jsp");

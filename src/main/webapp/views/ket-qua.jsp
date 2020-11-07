@@ -27,6 +27,7 @@
 		<li><a href="/o-ghep">Ở Ghép</a></li>
 		<li><a href="/huong-dan">Hướng Dẫn</a></li>
 		<li><a href="/dang-tin">Đăng Tin</a></li>
+		<li><a href="/quan-ly-tin">Quản Lý Tin</a></li>
 	</ul>
 	<form action="/tim-kiem" method="get" class="search-form">
 		<select name="categoryId" id="category">
@@ -46,10 +47,9 @@
 				</c:if>
 			</c:forEach>
 		</select> <select name="price" id="price">
-			<option value="0" selected="<c:if test='${searchModel.price == this.value }'>selected</c:if>">Mức giá</option>
-			<option value="1000000" selected="<c:if test='${searchModel.price == this.value }'>selected</c:if>">Dưới 1 triệu</option>
-			<option value="1500000" selected="<c:if test='${searchModel.price == this.value }'>selected</c:if>">Dưới 1,5 triệu</option>
-			<option value="2000000" selected="<c:if test='${searchModel.price == this.value }'>selected</c:if>">Dưới 2 triệu</option>
+			<c:forEach var="price" items="${prices }">
+				<option value="${price.value }">${price.name }</option>
+			</c:forEach>
 		</select> <select name="acreage" id="acreage">
 			<option value="0">Diện tích</option>
 			<option value="20">Dưới 20 mét vuông</option>

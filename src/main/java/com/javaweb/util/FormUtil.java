@@ -7,11 +7,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 
 import com.javaweb.model.PostModel;
+import com.javaweb.model.UserModel;
 
 public class FormUtil {
 	
 	// hàm chuyển đổi các parameter lấy từ form request vào trong model
 	public static PostModel toModel(HttpServletRequest req) throws ServletException, IOException {
+		UserModel user = (UserModel) Session.getInstance().getSession(req, "USER");
 		PostModel post = new PostModel();
 		req.setCharacterEncoding("UTF-8");
 		post.setTitle(req.getParameter("title"));
@@ -23,7 +25,7 @@ public class FormUtil {
 		post.setPhoneNumber(req.getParameter("phoneNumber"));
 		post.setAddress(req.getParameter("address"));
 		post.setCreatedDate(new Timestamp(System.currentTimeMillis()));
-		post.setUserId(2);
+		post.setUserId(user.getId());
 		post.setCategoryId(Integer.parseInt(req.getParameter("categoryId")));
 		post.setStreetId(req.getParameter("streetId"));
 		return post;

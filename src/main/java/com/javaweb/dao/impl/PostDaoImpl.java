@@ -90,5 +90,11 @@ public class PostDaoImpl extends AbstractDao<PostModel> implements PostDao {
 		sql.append("AND streetId LIKE ? AND price<=? AND acreage<=?");
 		return queryList(sql.toString() , new PostMapper(), c1, c2, c3, streetId, price, acreage);
 	}
+
+	@Override
+	public List<PostModel> getAllByCate(long categoryId) {
+		String sql = "SELECT * FROM post WHERE categoryId=? ORDER BY createdDate desc";
+		return queryList(sql, new PostMapper(), categoryId);
+	}
 	
 }

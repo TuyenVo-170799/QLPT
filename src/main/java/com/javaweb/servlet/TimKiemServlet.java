@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.javaweb.dao.CategoryDao;
+import com.javaweb.dao.FilterPriceDao;
 import com.javaweb.dao.PhotoDao;
 import com.javaweb.dao.PostDao;
 import com.javaweb.dao.StreetDao;
@@ -34,6 +35,10 @@ public class TimKiemServlet extends HttpServlet {
 	
 	@Inject
 	private CategoryDao categoryDao;
+	
+	@Inject
+	private FilterPriceDao filterPriceDao;
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		req.setCharacterEncoding("UTF-8");
@@ -52,6 +57,7 @@ public class TimKiemServlet extends HttpServlet {
 			notify = "Đã tìm thấy " + posts.size() + " bài viết.";
 		}
 		SearchModel searchModel = new SearchModel(categoryId, streetId, price, acreage);
+		req.setAttribute("prices", filterPriceDao.getAll());
 		req.setAttribute("searchModel", searchModel);
 		req.setAttribute("notify", notify);
 		req.setAttribute("count", count);

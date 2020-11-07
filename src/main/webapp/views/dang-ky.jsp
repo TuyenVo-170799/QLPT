@@ -30,22 +30,26 @@
 		<li><a href="/o-ghep">Ở Ghép</a></li>
 		<li><a href="/huong-dan">Hướng Dẫn</a></li>
 		<li><a href="/dang-tin">Đăng Tin</a></li>
+		<li><a href="/quan-ly-tin">Quản Lý Tin</a></li>
 	</ul>
-	<form class="content">
+	<form class="content" action="/dang-ky" method="post">
 		<div class="register-box">
 			<div class="register-title">
 				<h3>Đăng Ký Tài Khoản</h3>
 			</div>
 			<div class="register-body">
 				<div class="form-group">
-					<label>Họ và tên *</label> <input type="text" class="form-control">
+					<label>Tên đăng nhập *</label> <input type="text" class="form-control" name="userName">
+				</div>
+				<div class="form-group">
+					<label>Mật khẩu *</label> <input type="password" class="form-control" name="password">
+				</div>
+				<div class="form-group">
+					<label>Họ và tên *</label> <input type="text" class="form-control" name="fullName">
 				</div>
 				<div class="form-group">
 					<label>Số điện thoại *</label> <input type="text"
-						class="form-control">
-				</div>
-				<div class="form-group">
-					<label>Mật khẩu *</label> <input type="text" class="form-control">
+						class="form-control" name="phoneNumber">
 				</div>
 				<div class="form-group">
 					<label>Mã xác nhận *</label> <input type="text"

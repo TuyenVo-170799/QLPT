@@ -14,5 +14,5 @@ public interface PostDao {
 	public List<PostModel> getByUserId(long userId);
 	public List<PostModel> getByCategoryId(int categoryId);
 	public List<PostModel> search(int categoryId, String streetId, long price, float acreage);
-	
+	public List<PostModel> getAllByCate(long categoryId);
 }

@@ -28,12 +28,15 @@
 		<li><a href="/o-ghep">Ở Ghép</a></li>
 		<li><a href="/huong-dan">Hướng Dẫn</a></li>
 		<li><a href="/dang-tin">Đăng Tin</a></li>
+		<li><a href="/quan-ly-tin">Quản Lý Tin</a></li>
 	</ul>
 	<div class="header-text">
 		<h2>Cho thuê phòng trọ, tìm nhà trọ nhanh chóng</h2>
 		<p>Website đăng tin cho thuê phòng trọ, thuê nhà nguyên căn, hiệu
 			quả cao với hơn 3,000,000 lượt truy cập mỗi tháng, cùng tốc độ tải
 			trang cực nhanh.</p>
+		<br>
+        <span style="font-size: 30px; color: #ff1744;">&#128526; Hello ${USER.fullName }</span>
 	</div>
 	<div class="post-content">
 		<h2 class="body-title">Đăng Tin Cho Thuê</h2>

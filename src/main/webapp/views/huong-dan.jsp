@@ -26,6 +26,7 @@
 		<li><a href="/o-ghep">Ở Ghép</a></li>
 		<li><a href="/huong-dan">Hướng Dẫn</a></li>
 		<li><a href="/dang-tin">Đăng Tin</a></li>
+		<li><a href="/quan-ly-tin">Quản Lý Tin</a></li>
 	</ul>
 	<form action="/tim-kiem" method="get" class="search-form">
 		<select name="categoryId" id="category">

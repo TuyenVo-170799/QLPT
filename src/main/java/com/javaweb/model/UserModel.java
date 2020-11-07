@@ -7,8 +7,19 @@ public class UserModel {
 	private String password;
 	private String fullName;
 	private String phoneNumber;
-	private long roleId;
+	private int roleId;
 	
+	public UserModel() {
+		super();
+	}
+	public UserModel(String userName, String password, String fullName, String phoneNumber, int roleId) {
+		super();
+		this.userName = userName;
+		this.password = password;
+		this.fullName = fullName;
+		this.phoneNumber = phoneNumber;
+		this.roleId = roleId;
+	}
 	public long getId() {
 		return id;
 	}
@@ -39,10 +50,10 @@ public class UserModel {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-	public long getRoleId() {
+	public int getRoleId() {
 		return roleId;
 	}
-	public void setRoleId(long roleId) {
+	public void setRoleId(int roleId) {
 		this.roleId = roleId;
 	}
 	

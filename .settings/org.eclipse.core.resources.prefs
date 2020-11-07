@@ -1,5 +1,7 @@
 eclipse.preferences.version=1
 encoding//src/main/java/com/javaweb/dao/impl/AbstractDao.java=UTF-8
+encoding//src/main/java/com/javaweb/model/FilterPriceModel.java=UTF-8
+encoding//src/main/java/com/javaweb/servlet/DangNhapServlet.java=UTF-8
 encoding//src/main/java/com/javaweb/servlet/TimKiemServlet.java=UTF-8
 encoding//src/main/java/com/javaweb/servlet/TrangChuServlet.java=UTF-8
 encoding//src/main/java/com/javaweb/util/FormUtil.java=UTF-8

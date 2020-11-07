@@ -30,8 +30,9 @@
 		<li><a href="/o-ghep">Ở Ghép</a></li>
 		<li><a href="/huong-dan">Hướng Dẫn</a></li>
 		<li><a href="/dang-tin">Đăng Tin</a></li>
+		<li><a href="/quan-ly-tin">Quản Lý Tin</a></li>
 	</ul>
-	<form class="content">
+	<form class="content" action="/dang-nhap?dest=${dest }" method="post">
 		<div class="register-box">
 			<div class="register-title">
 				<h3>Đăng Nhập</h3>
@@ -39,10 +40,10 @@
 			<div class="register-body">
 				<div class="form-group">
 					<label>Tên đăng nhập/ Số điện thoại *</label> <input type="text"
-						class="form-control">
+						class="form-control" name="userName">
 				</div>
 				<div class="form-group">
-					<label>Mật khẩu *</label> <input type="text" class="form-control">
+					<label>Mật khẩu *</label> <input type="password" class="form-control" name="password">
 				</div>
 				<div class="register-button">
 					<button type="submit">Đăng Nhập</button>
